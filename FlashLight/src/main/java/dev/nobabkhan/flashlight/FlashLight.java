@@ -29,6 +29,10 @@ public class FlashLight {
     }
     public void LED_ON(int camid)
     {
+        if(camid >= cameraId.length)
+        {
+            camid = 0;
+        }
         try {
             this.camManager.setTorchMode(cameraId[camid], true);
         } catch (CameraAccessException e) {
@@ -38,6 +42,10 @@ public class FlashLight {
 
     public void LED_OFF(int camid)
     {
+        if(camid >= cameraId.length)
+        {
+            camid = 0;
+        }
         try {
             this.camManager.setTorchMode(cameraId[camid], false);
         } catch (CameraAccessException e) {
