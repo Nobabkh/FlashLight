@@ -30,7 +30,7 @@ Step 2. Add the dependency:
 
 ```
   	dependencies {
-	        implementation 'com.github.Nobabkh:FlashLight:1.1'
+	        implementation 'com.github.Nobabkh:FlashLight:1.2'
 	}
 ```
 
